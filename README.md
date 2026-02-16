@@ -1,5 +1,5 @@
-# BuildAccessBrailleRAPDebian
-A docker configuration to build AccessBrailleRAP for debian base os
+# BuildAccessBrailleRAPDebian13
+A docker configuration to build AccessBrailleRAP for Debian 13 base os
 
 # usage
 
