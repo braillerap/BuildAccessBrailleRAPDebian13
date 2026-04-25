@@ -2,7 +2,7 @@
 
 export HOST_UID=$(id -u)
 export HOST_GID=$(id -g)
-export BRANCH="debian13"
+export BRANCH="main"
 
 if [ $# -gt 0 ]
  then

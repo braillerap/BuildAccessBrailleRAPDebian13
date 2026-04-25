@@ -49,7 +49,7 @@ tree  -a /home/builduser/AccessBrailleRAP/package
 printf "\e[1;34m######################\e[0m\n"
 printf "\e[1;34mBuild production ready\e[0m\n"
 printf "\e[1;34m######################\e[0m\n"
-npm run builddebian
+npm run builddebian13
 printf "\e[0mBuild finished\n"
 
 #npm run buildview
@@ -58,10 +58,10 @@ printf "\e[0mBuild finished\n"
  ls -la /home/builduser/AccessBrailleRAP/dist/*
 
 
- if [ $(find /home/builduser/AccessBrailleRAP/dist/ -name "accessbraillerap-debian-*.deb") ];
+ if [ $(find /home/builduser/AccessBrailleRAP/dist/ -name "accessbraillerap-debian13-*.deb") ];
   then
     
-    for f in /home/builduser/AccessBrailleRAP/dist/accessbraillerap-debian-*.deb
+    for f in /home/builduser/AccessBrailleRAP/dist/accessbraillerap-debian13-*.deb
     do
         md5sum $f > $f.md5sum
         sed -i -r "s/ .*\/(.+)/  \1/g" $f.md5sum
